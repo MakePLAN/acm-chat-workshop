@@ -12,6 +12,7 @@ const connector = new builder.ChatConnector({
   appPassword: config.appPassword,
 });
 const bot = new builder.UniversalBot(connector);
+
 // Event when first message received
 bot.dialog('/', (session) => {
 
